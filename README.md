@@ -1,4 +1,4 @@
-# On track fast
+# On Track Fast
 get yourself out racing before you know it!
 
 ## What is OTF?
