@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Login from './components/Login';
 import SignUp from './components/Signup';
 import BuyCar from './components/BuyCar';
+import SellCar from './components/SellCar';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route exact path='/login' element={ <Login />}/>
         <Route exact path='/signup' element={ <SignUp />}/>
         <Route exact path='/buycar' element={ <BuyCar />}/>
-
+        <Route exact path='/sellcar' element={ <SellCar />}/>
       </Routes>
     </Router>
   );
