@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar li {
+  font-size: 20px;
+  display: inline;
+  float: left;
+  margin: 5px;
+  color: crimson;
+}
+
+.navbar {
+  display: block;
+  position: relative;
+  padding: 20px;
+  border: 15px;
+}
+
+.home h1 {
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: 15px;
+  padding: 20px;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: darkgreen;
+}
+
+.home p {
+  text-align: center;
+  font-size: 20px;
+
+
+}

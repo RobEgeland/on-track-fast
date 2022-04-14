@@ -3,8 +3,9 @@ import React from "react";
 function Home() {
     
     return (
-        <div>
-            <h1>welcome to on track fast</h1>
+        <div className="home">
+            <h1>Welcome to on track fast</h1>
+            <p>go from sitting in your basement to racing on track before you know it</p>
         </div>
     )
 }
