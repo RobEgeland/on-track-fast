@@ -1,10 +1,16 @@
 import React from "react";
+import { Card } from "semantic-ui-react"
 
 function BuyCar() {
     return (
-        <div>
-            <p>this is the buycar page</p>
-        </div>
+        <Card>
+               <div>
+                   <h1>test card</h1>
+               </div>
+               <div>
+                   <p>this is a test</p>
+               </div>
+            </Card>
     )
 }
 
