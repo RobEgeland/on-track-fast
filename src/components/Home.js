@@ -5,7 +5,7 @@ function Home() {
     return (
         <div className="home">
             <h1>Welcome to on track fast</h1>
-            <p>go from sitting in your basement to racing on track before you know it</p>
+            <p>go from sitting in your basement to racing on track before you know it!</p>
         </div>
     )
 }
