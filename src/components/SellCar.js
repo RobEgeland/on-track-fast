@@ -2,8 +2,11 @@ import React from "react";
 
 function SellCar() {
     return(
-        <div>
-            <p>this is the sell car page</p>
+        <div className="sellcar">
+            <form>
+                Car Type <input type="text"></input>
+                Year <input type="text"></input>
+            </form>
         </div>
     )
 }
