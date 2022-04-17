@@ -51,7 +51,7 @@ function SellCar() {
                     <br/>
                     Up-To-Date Equipment? <FormControlLabel control={<Checkbox />} label="Yes" onClick={e => setEquipment(!equipment)} />
                     <br/>
-                    Championships Won: <TextField label="ex. 2000, 2001" variant="outlined" value={champs} onChange={e => setChamps([e.target.value])} />
+                    Championships Won: <TextField label="ex. 2000, 2001" variant="outlined" value={champs} onChange={e => setChamps(e.target.value)} />
                     <br/>
                     <TextField label="Price" variant="outlined" value={price} onChange={e => setPrice(e.target.value)} />
                     <br/>
