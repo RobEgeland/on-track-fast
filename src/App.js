@@ -11,12 +11,13 @@ import SellCar from './components/SellCar';
 
 function App() {
   const [cars, setCars] = useState([])
+  
   useEffect(() => {
     fetch("http://localhost:3001/cars")
     .then(res => res.json())
     .then(res => setCars(res))
   },[])
-  console.log(cars)
+
   return (
     <Router>
       <NavBar />

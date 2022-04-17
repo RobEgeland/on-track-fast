@@ -46,6 +46,11 @@ code {
 
 }
 
-.sellcar input {
+.sellcar {
+  border: 10px;
+}
+
+.sellcar TextField {
+  border: 10px;
 
 }
