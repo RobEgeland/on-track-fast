@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useNavigate } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -6,7 +7,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
 
 
-function SellCar() {
+function SellCar({setCars, cars}) {
     const [car, setCar] = useState("")
     const [year, setYear] = useState("")
     const [pic, setPic] = useState("")
@@ -14,19 +15,32 @@ function SellCar() {
     const [equipment, setEquipment] = useState(false)
     const [champs, setChamps] = useState([])
     const [price, setPrice] = useState("")
+    const navigate = useNavigate();
 
     function handleSubmit(event) {
         event.preventDefault();
+        /* need to fix champ input array*/
         const newCar = {
             car,
-            pic,
+            "url": pic,
             year,
             price,
             sccaClass,
-            equipment,
-            champs
+            "UTDSaftey": equipment,
+            "championships": champs
         }
         console.log(newCar)
+        fetch("http://localhost:3001/cars", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newCar)
+        })
+        .then(res => res.json())
+        .then(res => console.log(res))
+        setCars([...cars, newCar]);
+        navigate("/buycar");
     }
 
     return(

@@ -11,7 +11,7 @@ import Box from '@mui/material/Box';
 
 
 function CarCard({url, car, year, championships, price, safety}) {
-    let champs = championships.join(', ')
+    
     return(
         <Box sx={{ flexGrow: 1 }}>
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} >
@@ -34,7 +34,7 @@ function CarCard({url, car, year, championships, price, safety}) {
                                 Up to date saftey equipment: {safety ? "Yes" : "No"}
                             </Typography>
                             <Typography variant="body2">
-                                Championships won: {champs}
+                                Championships won: {championships}
                             </Typography>
                             <br/>
                             <Typography variant="body2">

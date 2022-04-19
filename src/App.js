@@ -11,7 +11,7 @@ import SellCar from './components/SellCar';
 
 function App() {
   const [cars, setCars] = useState([])
-  
+
   useEffect(() => {
     fetch("http://localhost:3001/cars")
     .then(res => res.json())
@@ -26,7 +26,7 @@ function App() {
         <Route exact path='/login' element={ <Login />}/>
         <Route exact path='/signup' element={ <SignUp />}/>
         <Route exact path='/buycar'  element={ <BuyCar cars={cars} />}/>
-        <Route exact path='/sellcar' element={ <SellCar />}/>
+        <Route exact path='/sellcar' element={ <SellCar cars={cars} setCars={setCars} />}/>
       </Routes>
     </Router>
   );
