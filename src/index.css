@@ -98,5 +98,11 @@ code {
 .btn {
   text-align: center;
   padding: 10px;
-  display: flex;
+ 
+}
+
+.btn button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
 }

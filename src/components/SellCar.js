@@ -50,11 +50,11 @@ function SellCar({setCars, cars}) {
     return(
         <>
             <h1 className="sellcar">Sell your car here!</h1>
-            <form onSubmit={handleSubmit}>
+            <form className="btn" onSubmit={handleSubmit}>
                 <Box
                 component="form"
                 sx={{
-                    '& > :not(style)': { m: 1, width: '25ch' },
+                    '& > :not(style)': { m: 2, width: '25ch' },
                 }}
                 noValidate
                 autoComplete="off"
@@ -75,7 +75,7 @@ function SellCar({setCars, cars}) {
                     <TextField label="Price" variant="outlined" value={price} onChange={e => setPrice(e.target.value)} />
                     <br/>
                 </Box>
-                <button className="btn" type="submit" variant="contained">Sell Car</button>
+                <button  type="submit" variant="contained">Sell Car</button>
             </form>
         </>
     )
