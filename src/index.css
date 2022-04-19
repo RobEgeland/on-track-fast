@@ -21,11 +21,20 @@ code {
 }
 
 .navbar {
+  display:inline-table;
+  position: fixed;
   display: block;
   position: relative;
   padding: 20px;
-  border: 15px;
+  border: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar li {
+  display:inline;
+}
+.ulDiv {
+  text-align: center;
 }
 
 .home h1 {
@@ -53,4 +62,10 @@ code {
 .sellcar TextField {
   border: 10px;
 
+}
+
+.title {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: darkgreen;
 }

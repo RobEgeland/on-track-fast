@@ -22,6 +22,7 @@ function App() {
 
   return (
     <Router>
+      <h1 className='title'>On Track Fast</h1>
       <NavBar />
       <Routes>
         <Route exact path="/" element={ <Home username={username} isLoggedIn={isLoggedIn} /> }/>
