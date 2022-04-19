@@ -19,7 +19,6 @@ function SellCar({setCars, cars}) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        /* need to fix champ input array*/
         const newCar = {
             car,
             "url": pic,

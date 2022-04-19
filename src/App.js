@@ -11,6 +11,8 @@ import SellCar from './components/SellCar';
 
 function App() {
   const [cars, setCars] = useState([])
+  const [username, setUsername] = useState("")
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   useEffect(() => {
     fetch("http://localhost:3001/cars")
@@ -22,8 +24,8 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route exact path="/" element={ <Home /> }/>
-        <Route exact path='/login' element={ <Login />}/>
+        <Route exact path="/" element={ <Home username={username} isLoggedIn={isLoggedIn} /> }/>
+        <Route exact path='/login' element={ <Login username={username} setIsLoggedIn={setIsLoggedIn} setUsername={setUsername} />}/>
         <Route exact path='/signup' element={ <SignUp />}/>
         <Route exact path='/buycar'  element={ <BuyCar cars={cars} />}/>
         <Route exact path='/sellcar' element={ <SellCar cars={cars} setCars={setCars} />}/>
