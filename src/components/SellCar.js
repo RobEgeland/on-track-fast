@@ -29,7 +29,10 @@ function SellCar({setCars, cars}) {
             "championships": champs
         }
         console.log(newCar)
-        fetch("http://localhost:3001/cars", {
+        if (car || year || pic || sccaClass || equipment || champs || price === "") {
+            alert("Please Fill Out all Fields")
+        }else {
+            fetch("http://localhost:3001/cars", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -40,11 +43,13 @@ function SellCar({setCars, cars}) {
         .then(res => console.log(res))
         setCars([...cars, newCar]);
         navigate("/buycar");
+        }
+        
     }
 
     return(
         <>
-            <h1>Sell your car here!</h1>
+            <h1 className="sellcar">Sell your car here!</h1>
             <form onSubmit={handleSubmit}>
                 <Box
                 component="form"
@@ -53,6 +58,7 @@ function SellCar({setCars, cars}) {
                 }}
                 noValidate
                 autoComplete="off"
+                className="form"
                 >
                     <TextField label="Car" variant="outlined" value={car} onChange={e => setCar(e.target.value)} />
                     <br/>
@@ -69,7 +75,7 @@ function SellCar({setCars, cars}) {
                     <TextField label="Price" variant="outlined" value={price} onChange={e => setPrice(e.target.value)} />
                     <br/>
                 </Box>
-                <button type="submit" variant="contained">Sell Car</button>
+                <button className="btn" type="submit" variant="contained">Sell Car</button>
             </form>
         </>
     )

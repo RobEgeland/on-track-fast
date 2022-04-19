@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 function SignUp() {
     return (
         <>
-            <h1>Signup!</h1>
+            <h1 className="signup">Signup!</h1>
             <Box
                 component="form"
                 sx={{

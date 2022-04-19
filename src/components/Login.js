@@ -17,7 +17,7 @@ function Login({setUsername, setIsLoggedIn, username}) {
 
     return (
         <>
-            <h1>Login!</h1>
+            <h1 className="login">Login!</h1>
             <Box
                 component="form"
                 sx={{
