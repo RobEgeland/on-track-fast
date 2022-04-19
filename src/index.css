@@ -106,3 +106,11 @@ code {
   height: 40px;
   font-size: 16px;
 }
+
+.buycar {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+}
+

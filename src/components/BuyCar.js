@@ -9,11 +9,18 @@ function BuyCar({cars}) {
     
 
     return (
-        <Grid container spacing={2}>
-            <Grid item xs={8}>
-                {cars.map((car) => <CarCard key={car.id} safety={car.UTDSaftey} price={car.price} url={car.url} car={car.car} year={car.year} championships={car.championships}/>)}
+        <>
+            <h1 className="buycar">Buy a Car!</h1>
+            <Grid container spacing={4}>
+                    {cars.map((car) => {
+                        return (
+                            <Grid item xs={4}>
+                                <CarCard key={car.id} safety={car.UTDSaftey} price={car.price} url={car.url} car={car.car} year={car.year} championships={car.championships}/>
+                            </Grid>
+                        )
+                    })}
             </Grid>
-        </Grid>
+        </>
     )
 }
 

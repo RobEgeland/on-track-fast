@@ -42,7 +42,7 @@ function CarCard({url, car, year, championships, price, safety}) {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small">Learn More</Button>
+                            <Button size="small">Buy Car</Button>
                         </CardActions>
                     </Card>
                 </Grid>
