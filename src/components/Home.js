@@ -41,7 +41,7 @@ function Home({username, isLoggedIn}) {
                                     Dallas, TX
                                 </Typography>
                                 <Typography variant="body2">
-                                    "I wanted to get into racing, it took me three months to buy a car and get me on track, thanks On Track Fast!"
+                                    "I wanted to get into racing, it took me three months to buy a car and get on track, thanks On Track Fast!"
                                 </Typography>
                             </CardContent>
                             <CardActions>
