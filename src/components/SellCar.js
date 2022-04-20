@@ -29,21 +29,18 @@ function SellCar({setCars, cars}) {
             "championships": champs
         }
         console.log(newCar)
-        if (car || year || pic || sccaClass || equipment || champs || price === "") {
-            alert("Please Fill Out all Fields")
-        }else {
-            fetch("http://localhost:3001/cars", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(newCar)
+        fetch("http://localhost:3001/cars", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newCar)
         })
         .then(res => res.json())
         .then(res => console.log(res))
         setCars([...cars, newCar]);
         navigate("/buycar");
-        }
+        
         
     }
 
