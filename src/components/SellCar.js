@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 
 
 function SellCar({setCars, cars}) {
@@ -54,26 +54,42 @@ function SellCar({setCars, cars}) {
                 <Box
                 component="form"
                 sx={{
-                    '& > :not(style)': { m: 2, width: '25ch' },
+                    '& > :not(style)': { m: 5, width: '125ch', textAlign: "center", padding: "20px", justifyContent: "center", alignItems: "center", display: "flex", marginLeft: "140px"},
                 }}
                 noValidate
                 autoComplete="off"
-                className="form"
+                
                 >
-                    <TextField label="Car" variant="outlined" value={car} onChange={e => setCar(e.target.value)} />
-                    <br/>
-                    <TextField label="Year" variant="outlined" value={year} onChange={e => setYear(e.target.value)} />
-                    <br/>
-                    <TextField label="Picture" variant="outlined" value={pic} onChange={e => setPic(e.target.value)} />
-                    <br/>
-                    <TextField label="SCCA Class" variant="outlined" value={sccaClass} onChange={e => setSccaClass(e.target.value)} />
-                    <br/>
-                    Up-To-Date Equipment? <FormControlLabel control={<Checkbox />} label="Yes" onClick={e => setEquipment(!equipment)} />
-                    <br/>
-                    Championships Won: <TextField label="ex. 2000, 2001" variant="outlined" value={champs} onChange={e => setChamps(e.target.value)} />
-                    <br/>
-                    <TextField label="Price" variant="outlined" value={price} onChange={e => setPrice(e.target.value)} />
-                    <br/>
+                    <Grid container spacing={4} >
+                        <Grid item xs={4}>
+                            <TextField label="Car" variant="outlined" value={car} onChange={e => setCar(e.target.value)} />
+                        </Grid>
+                        <br/>
+                        <Grid item xs={4}>
+                            <TextField label="Year" variant="outlined" value={year} onChange={e => setYear(e.target.value)} />
+                        </Grid>
+                        <br/>
+                        <Grid item xs={4}>
+                            <TextField label="Picture" variant="outlined" value={pic} onChange={e => setPic(e.target.value)} />
+                        </Grid>
+                        <br/>
+                        <Grid item xs={4}>
+                            <TextField label="SCCA Class" variant="outlined" value={sccaClass} onChange={e => setSccaClass(e.target.value)} />
+                        </Grid>
+                        <br/>
+                        <Grid item xs={4}>
+                            Up-To-Date Equipment? <FormControlLabel control={<Checkbox />} label="Yes" onClick={e => setEquipment(!equipment)} />
+                        </Grid>
+                        <br/>
+                        <Grid item xs={4}>
+                            Championships Won: <TextField label="ex. 2000, 2001" variant="outlined" value={champs} onChange={e => setChamps(e.target.value)} />
+                        </Grid>
+                        <br/>
+                        <Grid item xs={4}>
+                            <TextField label="Price" variant="outlined" value={price} onChange={e => setPrice(e.target.value)} />
+                        </Grid>
+                        <br/>
+                    </Grid>
                 </Box>
                 <button  type="submit" variant="contained">Sell Car</button>
             </form>
