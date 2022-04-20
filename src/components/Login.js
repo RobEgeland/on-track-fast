@@ -28,7 +28,7 @@ function Login({setUsername, setIsLoggedIn, username}) {
                 autoComplete="off"
                 
                 >
-                    <TextField label="UserName" variant="outlined" value={username} onChange={(e) => setUsername(e.target.value)} />
+                    <TextField label="UserName" variant="outlined" onChange={(e) => setUsername(e.target.value)} />
                     <Button variant="contained" onClick={handleClick} >Login</Button>
 
                 </Box>

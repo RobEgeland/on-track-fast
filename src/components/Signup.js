@@ -17,7 +17,7 @@ function SignUp() {
                 autoComplete="off"
                 
                 >
-                    <TextField label="Name" variant="outlined" />
+                    <TextField label="Username" variant="outlined" />
                     <TextField label="Email" variant="outlined" />
                     <Button variant="contained" >Signup</Button>
 
