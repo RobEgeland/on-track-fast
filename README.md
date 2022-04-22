@@ -10,15 +10,23 @@ the difference is in the design... OTF is professionally built and easy to use. 
 
 ### Credits
 car pictures: 
+
 https://autobahncc.com
+
 https://racecarsdirect.com
+
 https://scca-e.com
+
 https://www.racecar-engineering.com
 
 stock persons photos:
+
 https://images.pexels.com
+
 https://media.istockphoto.com
+
 https://photographycourse.net
 
 ### Styling
+
 https://mui.com
